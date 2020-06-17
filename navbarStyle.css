@@ -1,0 +1,41 @@
+header{
+	height: 50px;
+	background-color: white;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+#name_logo
+{
+	padding-top: 10px;
+	float: left;
+	width: 20%;
+	font-size:130%;
+	height: 50px;
+	text-align: center;
+}
+
+#exclamatory
+{
+	color: red;
+}
+
+#name
+{
+	color: #008AE6;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#name_logo
+{
+	padding-top: 15px;
+	float: left;
+	width: 20%;
+	font-size:80%;
+	height: 50px;
+	text-align: center;
+}
+
+
+}
