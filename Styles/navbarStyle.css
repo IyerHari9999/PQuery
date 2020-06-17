@@ -1,0 +1,51 @@
+header{
+	height: 60px;
+	background-color: white;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+#logo
+{
+	float: left;
+	width: 25%;
+	height: 60px;
+	text-align: center;
+	font-size:120%;
+	padding-top: 15px;
+}
+
+
+#tabs{
+	float: left;
+	width: 60%;
+	font-size:120%;
+	height: 60px;
+}
+
+#user{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+
+#user img{
+	display: block;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+#logo
+{
+	padding-top: 20px;
+	font-size: 100%;
+}
+
+#user img{
+	height: 40px;
+	margin-top: 10px;
+}
+}
