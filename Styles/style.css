@@ -3,6 +3,11 @@
 	padding: 0px 0px 0px 0px;
 	box-sizing: border-box;
 	text-decoration: none;
+	overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body{
