@@ -44,6 +44,11 @@ header:hover {
 .tab {
   width: 25%;
   float: left;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: #e8e8e8;
 }
 
 .tab img {
@@ -52,6 +57,7 @@ header:hover {
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 12px;
 }
 
 #tab-active {
