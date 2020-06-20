@@ -1,14 +1,14 @@
-header {
-  height: 60px;
-  background: white;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
-  font-family: "Balsamiq Sans", cursive;
-  transition: 0.4s;
+header{
+	height: 60px;
+	background-color: white;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 header:hover {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 }
+
 #logo {
   float: left;
   width: 25%;
@@ -17,74 +17,70 @@ header:hover {
   padding-left: 30px;
   text-align: left;
   font-size: 120%;
+
+
+#tabs{
+	float: left;
+	width: 50%;
+	font-size:120%;
+	height: 60px;
 }
 
-#tabs {
-  float: left;
-  width: 50%;
-  height: 60px;
-  font-size: 120%;
+#user{
+	float: left;
+	width: 25%;
+	height: 60px;
 }
 
-#user {
-  float: left;
-  width: 25%;
-  height: 60px;
+#user img{
+	float: right;
+	clear: right;
+	height: 50px;
+	margin-top: 5px;
+	margin-right: 30px;
 }
 
-#user img {
-  float: right;
-  clear: right;
-  height: 50px;
-  margin-top: 5px;
-  margin-right: 30px;
+.tab{
+	width: 25%;
+	float: left;
 }
 
-.tab {
-  width: 25%;
-  float: left;
-  transition: 0.3s;
+.tab img{
+	height: 32px;
+	margin-top: 12px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
-.tab:hover {
-  background: #e8e8e8;
-}
-
-.tab img {
-  display: block;
-  height: 32px;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-}
-
-#tab-active {
-  width: 75%;
-  height: 5px;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  background: red;
-  border-width: 0;
-  border-radius: 15px;
+#tab-active{
+	width:75%; 
+	margin-left: auto; 
+	margin-right: auto;
+	height:5px;
+	border-width:0;
+	color:red;
+	background-color:red;
+	border-radius: 15px;
+	margin-top: 12px;"
 }
 
 @media only screen and (max-width: 768px) {
-  #logo {
-    padding-top: 20px;
-    padding-left: 0px;
-    font-size: 100%;
-    text-align: center;
-  }
+#logo
+{
+	padding-top: 20px;
+	padding-left: 0px;
+	font-size: 100%;
+	text-align: center;
+}
 
-  #user img {
-    height: 40px;
-    margin-top: 10px;
-  }
+#user img{
+	height: 40px;
+	margin-top: 10px;
+}
 
-  .tab {
-    visibility: hidden;
-    /* display: none; */
-  }
+.tab{
+	visibility: hidden;
+}
+
 }
