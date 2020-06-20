@@ -3,6 +3,7 @@
   <head>
     <title>PQuery</title>
     <link rel="stylesheet" type="text/css" href="Styles/navbarStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/sidebarStyle.css" />
     <link rel="stylesheet" type="text/css" href="Styles/homeStyle.css" />
     <link rel="stylesheet" type="text/css" href="Styles/style.css" />
 
@@ -14,7 +15,27 @@
   </head>
   <body>
     <header>
+      <!-- Hamburger menu (&#9776) icon for sidebar -->
       <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+      <!-- Sidebar in mobile view -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#" onclick="closeNav()"><img src="Images/home.png" />Home</a>
+        <a href="Pages/post.html" onclick="closeNav()"
+          ><img src="Images/post.png" />Post</a
+        >
+        <a href="Pages/people.html" onclick="closeNav()"
+          ><img src="Images/people.png" />People</a
+        >
+        <a href="Pages/about.html" onclick="closeNav()"
+          ><img src="Images/about.png" />About</a
+        >
+      </div>
+
+      <!-- PQuery Logo -->
       <div id="logo">
         <a href="#" onclick="closeNav()">
           <span style="color: red; margin-right: -5px;">!</span>
@@ -22,6 +43,7 @@
         </a>
       </div>
 
+      <!-- Nav menu for desktop view -->
       <div id="tabs" onclick="closeNav()">
         <div class="tab">
           <a href="#">
@@ -46,27 +68,25 @@
         </div>
       </div>
 
+      <!-- User Profile Avatar -->
       <div id="user">
         <img src="Images/profile.png" />
       </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="#" onclick="closeNav()"><img src="Images/home.png" />Home</a>
-      <a href="Pages/post.html" onclick="closeNav()"
-        ><img src="Images/post.png" />Post</a
-      >
-      <a href="Pages/people.html" onclick="closeNav()"
-        ><img src="Images/people.png" />People</a
-      >
-      <a href="Pages/about.html" onclick="closeNav()"
-        ><img src="Images/about.png" />About</a
-      >
+    <!-- Temporary Page content -->
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      "
+    >
+      <h2>Home Page</h2>
     </div>
 
+    <!-- Feed Area -->
     <div id="feed" onclick="closeNav()">
       <div class="feeds">
         &nbsp &nbsp <strong>Lorem ipsum</strong> dolor sit amet consectetur
@@ -85,6 +105,8 @@
       <div class="feeds"></div>
       <div class="feeds"></div>
     </div>
+
+    <!-- JS code for toggling sidebar in mobile view -->
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";

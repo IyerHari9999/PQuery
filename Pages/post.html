@@ -3,6 +3,7 @@
   <head>
     <title>PQuery</title>
     <link rel="stylesheet" type="text/css" href="../Styles/navbarStyle.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/sidebarStyle.css" />
     <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -12,13 +13,37 @@
   </head>
   <body>
     <header>
+      <!-- Hamburger menu (&#9776) icon for sidebar -->
+      <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+      <!-- Sidebar in mobile view -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../index.html" onclick="closeNav()"
+          ><img src="../Images/home.png" />Home</a
+        >
+        <a href="#" onclick="closeNav()"
+          ><img src="../Images/post.png" />Post</a
+        >
+        <a href="./people.html" onclick="closeNav()"
+          ><img src="../Images/people.png" />People</a
+        >
+        <a href="./about.html" onclick="closeNav()"
+          ><img src="../Images/about.png" />About</a
+        >
+      </div>
+
+      <!-- PQuery Logo -->
       <div id="logo">
-        <a href="../index.html">
+        <a href="../index.html" onclick="closeNav()">
           <span style="color: red; margin-right: -5px;">!</span>
           <span style="color: #008ae6;">PQuery</span>
         </a>
       </div>
 
+      <!-- Nav menu for desktop view -->
       <div id="tabs">
         <div class="tab">
           <a href="../index.html">
@@ -43,9 +68,33 @@
         </div>
       </div>
 
+      <!-- User Profile Avatar -->
       <div id="user">
         <img src="../Images/profile.png" />
       </div>
     </header>
+
+    <!-- Temporary Page content -->
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      "
+    >
+      <h2>Post Page</h2>
+    </div>
+
+    <!-- JS code for toggling sidebar in mobile view -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>
