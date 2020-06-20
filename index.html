@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>PQuery</title>
+    <link rel="stylesheet" type="text/css" href="Styles/navbarStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/homeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <span style="color: red; margin-right: -5px;">!</span>
+          <span style="color: #008ae6;">PQuery</span>
+        </a>
+      </div>
 
-	<title>PQuery</title>
-	<link rel="stylesheet" type="text/css" href="Styles/navbarStyle.css">
-	<link rel="stylesheet" type="text/css" href="Styles/homeStyle.css">
-	<link rel="stylesheet" type="text/css" href="Styles/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+      <div id="tabs">
+        <div class="tab">
+          <a href="index.html">
+            <img src="Images/home.png" />
+            <hr id="tab-active" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/post.html">
+            <img src="Images/post.png" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/people.html">
+            <img src="Images/people.png" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/about.html">
+            <img src="Images/about.png" />
+          </a>
+        </div>
+      </div>
 
-</head>
-<body>
+      <div id="user">
+        <img src="Images/profile.png" />
+      </div>
+    </header>
 
-	<header>
-		<div id="logo">
-			<a href="index.html">
-			<span style="color: red; margin-right: -5px;">!</span>
-			<span style="color: #008AE6;">PQuery</span>
-			</a>
-		</div>
-
-		<div id="tabs">
-			<div class="tab">
-				<a href="index.html">
-				<img src="Images/home.png">	
-				<hr id="tab-active">
-				</a>
-			</div>
-			<div class="tab">
-				<a href="Pages/post.html">
-				<img src="Images/post.png">
-				</a>	
-			</div>
-			<div class="tab">
-				<a href="Pages/people.html">
-				<img src="Images/people.png">
-				</a>		
-			</div>
-			<div class="tab">
-				<a href="Pages/about.html">
-				<img src="Images/about.png">		
-				</a>
-			</div>
-		</div>
-
-		<div id="user">
-			<img src="Images/profile.png">
-		</div>
-	</header>
-
-	<div id="feed">
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-		<div class="feeds">
-		</div>
-
-	</div>
-
-</body>
+    <div id="feed">
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+    </div>
+  </body>
 </html>
