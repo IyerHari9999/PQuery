@@ -11,13 +11,8 @@ header:hover {
 }
 
 #hamburger {
-  float: left;
-  width: 5%;
-  height: 60px;
-  font-size: 150%;
-  padding: 10px 20px;
-  /* visibility: hidden; */
   display: none;
+  /* background: #f1f1f1; */
 }
 
 #logo {
@@ -93,12 +88,13 @@ header:hover {
   transition: 0.5s;
   padding-top: 60px;
   font-family: "Balsamiq Sans", cursive;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .sidenav a {
   padding: 30px 8px 30px 32px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: #777;
   display: block;
   transition: 0.3s;
@@ -106,7 +102,15 @@ header:hover {
 
 .sidenav a:hover {
   color: #333;
-  font-size: 27px;
+  font-size: 22px;
+}
+
+.sidenav a img {
+  display: block;
+  float: left;
+  height: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .sidenav .closebtn {
@@ -123,21 +127,30 @@ header:hover {
 @media only screen and (max-width: 768px) {
   #hamburger {
     display: block;
+    float: left;
+    width: 20%;
+    padding: 15px 20px;
+    height: 60px;
+    font-size: 150%;
+    cursor: pointer;
   }
   #logo {
+    width: 60%;
     padding-top: 20px;
     padding-left: 0px;
-    font-size: 120%;
+    font-size: 150%;
     text-align: center;
+  }
+  #user {
+    width: 20%;
   }
 
   #user img {
-    height: 40px;
-    margin-top: 10px;
+    height: 32px;
+    margin-top: 14px;
+    margin-right: 20px;
   }
-
-  .tab {
-    /* visibility: hidden; */
+  #tabs {
     display: none;
   }
 }
