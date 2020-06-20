@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PQuery</title>
+    <link rel="stylesheet" type="text/css" href="Styles/navbarStyle2.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/homeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span id="hamburger" onclick="openNav()">&#9776;</span>
+      <div id="logo">
+        <a href="index2.html" onclick="closeNav()">
+          <span style="color: red; margin-right: -5px;">!</span>
+          <span style="color: #008ae6;">PQuery</span>
+        </a>
+      </div>
+
+      <div id="tabs" onclick="closeNav()">
+        <div class="tab">
+          <a href="index2.html">
+            <img src="Images/home.png" />
+            <hr id="tab-active" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/post.html">
+            <img src="Images/post.png" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/people.html">
+            <img src="Images/people.png" />
+          </a>
+        </div>
+        <div class="tab">
+          <a href="Pages/about.html">
+            <img src="Images/about.png" />
+          </a>
+        </div>
+      </div>
+
+      <div id="user">
+        <img src="Images/profile.png" />
+      </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#" onclick="closeNav()">Home</a>
+      <a href="#" onclick="closeNav()">Post</a>
+      <a href="#" onclick="closeNav()">People</a>
+      <a href="#" onclick="closeNav()">About</a>
+    </div>
+
+    <div id="feed" onclick="closeNav()">
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+      <div class="feeds"></div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
