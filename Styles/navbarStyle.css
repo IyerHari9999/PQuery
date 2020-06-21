@@ -1,20 +1,19 @@
-/* COMMENTED CODE HAS BEEN COPIED TO sidebarStyle.css */
-
 header {
   height: 60px;
   background: white;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16); */
+  box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.16);
   font-family: "Balsamiq Sans", cursive;
   transition: 0.4s ease;
 }
 
 header:hover {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* #hamburger {
+#hamburger {
   display: none;
-} */
+}
 
 #logo {
   float: left;
@@ -77,56 +76,8 @@ header:hover {
   border-radius: 15px;
 }
 
-/* .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #eee;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  font-family: "Balsamiq Sans", cursive;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-}
-
-.sidenav a {
-  padding: 30px 8px 30px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #777;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #333;
-  font-size: 22px;
-}
-
-.sidenav a img {
-  display: block;
-  float: left;
-  height: 24px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 25px;
-  margin-left: 50px;
-}
-.sidenav .closebtn:hover {
-  font-size: 32px;
-} */
-
 @media only screen and (max-width: 768px) {
-  /* #hamburger {
+  #hamburger {
     display: block;
     float: left;
     width: 20%;
@@ -134,7 +85,8 @@ header:hover {
     height: 60px;
     font-size: 150%;
     cursor: pointer;
-  } */
+  }
+
   #logo {
     width: 60%;
     padding-top: 20px;
