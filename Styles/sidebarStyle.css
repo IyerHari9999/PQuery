@@ -1,0 +1,102 @@
+#hamburger {
+  display: none;
+  /* background: #f1f1f1; */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+  font-family: "Balsamiq Sans", cursive;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.sidenav a div{
+  padding-top: 8px;
+}
+
+.sidenav a div div{
+  padding-top: 2px;
+}
+
+.sidenav a {
+  padding: 10px 8px 8px 10px;
+  margin: 10px 20px 20px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #777;
+  background-color: white ;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.16);
+  display: block;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.sidenav a:hover {
+  color: #333;
+  font-size: 22px;
+}
+
+.sidenav a img {
+  display: block;
+  float: left;
+  height: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  top: 0;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 50px;
+  border: 0px;
+  background-color: #eee;
+  box-shadow: unset;
+}
+.sidenav .closebtn:hover {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 15px 20px;
+    height: 60px;
+    font-size: 150%;
+    cursor: pointer;
+  }
+
+    #tab-active{
+    float: left;
+    width: 10px;
+    height: 40px;
+    background-color:red;
+    border-radius: 10px;
+    margin: 0px;
+    margin-right: 30px;
+  }
+
+  .tab-notactive{
+    float: left;
+    width: 10px;
+    height: 40px;
+    background-color:grey;
+    border-radius: 10px;
+    margin: 0px;
+    margin-right: 30px;
+  }
+
+}
