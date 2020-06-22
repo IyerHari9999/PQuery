@@ -5,6 +5,7 @@
   height: auto;
   margin: 20px 20px 20px 50px;
   border-radius: 3px;
+  box-shadow: inset 4px 4px 10px #d1d9e6, inset -8px -8px 15px #f9f9f9;
 }
 
 .feeds {

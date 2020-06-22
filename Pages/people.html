@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <!-- Hamburger menu (&#9776) icon for sidebar -->
@@ -21,18 +22,34 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a href="../index.html" onclick="closeNav()"
-          ><img src="../Images/home.png" />Home</a
-        >
-        <a href="./post.html" onclick="closeNav()"
-          ><img src="../Images/post.png" />Post</a
-        >
-        <a href="#" onclick="closeNav()"
-          ><img src="../Images/people.png" />People</a
-        >
-        <a href="./about.html" onclick="closeNav()"
-          ><img src="../Images/about.png" />About</a
-        >
+        <a href="../index.html" onclick="closeNav()">
+          <hr class="notactive-tab" />
+          <div>
+            <img src="../Images/home.png" />
+            <div>Home</div>
+          </div>
+        </a>
+        <a href="./post.html" onclick="closeNav()">
+          <hr class="notactive-tab" />
+          <div>
+            <img src="../Images/post.png" />
+            <div>Post</div>
+          </div>
+        </a>
+        <a href="#" onclick="closeNav()">
+          <hr id="active-tab" />
+          <div>
+            <img src="../Images/people.png" />
+            <div>People</div>
+          </div>
+        </a>
+        <a href="./about.html" onclick="closeNav()">
+          <hr class="notactive-tab" />
+          <div>
+            <img src="../Images/about.png" />
+            <div>About</div>
+          </div>
+        </a>
       </div>
 
       <!-- PQuery Logo -->
@@ -75,14 +92,7 @@
     </header>
 
     <!-- Temporary Page content -->
-    <div
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-      "
-    >
+    <div>
       <h2>People Page</h2>
     </div>
 

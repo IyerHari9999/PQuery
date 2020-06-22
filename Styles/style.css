@@ -13,3 +13,27 @@
 body {
   background-color: #f6f6f6;
 }
+
+div h2 {
+  display: flex;
+  align-items: center; /* this was commented in previous code */
+  justify-content: center; /* this was commented in previous code */
+  /* margin-top: 30px;
+  margin-left: 52px;      PREVIOUS CODE
+  padding-left: 5px; */
+  margin: 30px 600px 30px 52px;
+  padding: 20px 5px;
+  box-shadow: 18px 18px 20px #d1d9e6, -12px -12px 20px #fff;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  div h2 {
+    /* align-items: center;     PREVIOUS CODE
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding-left: 0px; */
+    margin: 30px 50px;
+  }
+}
