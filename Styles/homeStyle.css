@@ -3,9 +3,8 @@
   width: 60%;
   background-color: #e8e8e8;
   height: auto;
-  margin: 20px 20px 20px 50px;
+  margin: 8px 20px 20px 50px;
   border-radius: 3px;
-  box-shadow: inset 4px 4px 10px #d1d9e6, inset -8px -8px 15px #f9f9f9;
 }
 
 .feeds {
@@ -24,7 +23,7 @@
 @media only screen and (max-width: 768px) {
   #feed {
     width: 100%;
-    margin: 20px 20px 20px 0px;
+    margin: 8px 20px 20px 0px;
   }
 
   .feeds {
