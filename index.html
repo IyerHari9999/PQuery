@@ -1,123 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PQuery</title>
-    <link rel="stylesheet" type="text/css" href="Styles/navbarStyle.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/sidebarStyle.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/homeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <title>PQuery</title>
+  <link rel="stylesheet" type="text/css" href="Styles/navbarStyle.css" />
+  <link rel="stylesheet" type="text/css" href="Styles/sidebarStyle.css" />
+  <link rel="stylesheet" type="text/css" href="Styles/homeStyle.css" />
+  <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="Styles/feedcontents.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
-    <header>
-      <!-- Hamburger menu (&#9776) icon for sidebar -->
-      <span id="hamburger" onclick="openNav()">&#9776;</span>
+<body>
+  <header>
+    <!-- Hamburger menu (&#9776) icon for sidebar -->
+    <span id="hamburger" onclick="openNav()">&#9776;</span>
 
-      <!-- Sidebar in mobile view -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#" onclick="closeNav()">
-          <hr id="active-tab" />
-          <div>
-            <img src="Images/home.png" />
-            <div>Home</div>
-          </div>
-        </a>
-        <a href="Pages/post.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="Images/post.png" />
-            <div>Post</div>
-          </div>
-        </a>
-        <a href="Pages/people.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="Images/people.png" />
-            <div>People</div>
-          </div>
-        </a>
-        <a href="Pages/about.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="Images/about.png" />
-            <div>About</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- PQuery Logo -->
-      <div id="logo">
-        <a href="#" onclick="closeNav()">
-          <span style="color: red; margin-right: -5px;">!</span>
-          <span style="color: #008ae6;">PQuery</span>
-        </a>
-      </div>
-
-      <!-- Nav menu for desktop view -->
-      <div id="tabs" onclick="closeNav()">
-        <div class="tab">
-          <a href="#">
-            <img src="Images/home.png" />
-            <hr id="tab-active" />
-          </a>
+    <!-- Sidebar in mobile view -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" onclick="closeNav()">
+        <hr id="active-tab" />
+        <div>
+          <img src="Images/home.png" />
+          <div>Home</div>
         </div>
-        <div class="tab">
-          <a href="Pages/post.html">
-            <img src="Images/post.png" />
-          </a>
+      </a>
+      <a href="Pages/post.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="Images/post.png" />
+          <div>Post</div>
         </div>
-        <div class="tab">
-          <a href="Pages/people.html">
-            <img src="Images/people.png" />
-          </a>
+      </a>
+      <a href="Pages/people.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="Images/people.png" />
+          <div>People</div>
         </div>
-        <div class="tab">
-          <a href="Pages/about.html">
-            <img src="Images/about.png" />
-          </a>
+      </a>
+      <a href="Pages/about.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="Images/about.png" />
+          <div>About</div>
         </div>
-      </div>
-
-      <!-- User Profile Avatar -->
-      <div id="user">
-        <img src="Images/profile.png" />
-      </div>
-    </header>
-
-    <!-- Temporary Page content -->
-    <div>
-      <h2>Latest Feed</h2>
+      </a>
     </div>
 
-    <!-- Feed Area -->
-    <div id="feed" onclick="closeNav()">
-      <div class="feeds"></div>
-      <div class="feeds"></div>
-      <div class="feeds"></div>
-      <div class="feeds"></div>
-      <div class="feeds"></div>
-      <div class="feeds"></div>
-      <div class="feeds"></div>
+    <!-- PQuery Logo -->
+    <div id="logo">
+      <a href="#" onclick="closeNav()">
+        <span style="color: red; margin-right: -5px;">!</span>
+        <span style="color: #008ae6;">PQuery</span>
+      </a>
     </div>
 
-    <!-- JS code for toggling sidebar in mobile view -->
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
+    <!-- Nav menu for desktop view -->
+    <div id="tabs" onclick="closeNav()">
+      <div class="tab">
+        <a href="#">
+          <img src="Images/home.png" />
+          <hr id="tab-active" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="Pages/post.html">
+          <img src="Images/post.png" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="Pages/people.html">
+          <img src="Images/people.png" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="Pages/about.html">
+          <img src="Images/about.png" />
+        </a>
+      </div>
+    </div>
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-  </body>
+    <!-- User Profile Avatar -->
+    <div id="user">
+      <img src="Images/profile.png" />
+    </div>
+  </header>
+
+  <!-- Temporary Page content -->
+  <div>
+    <h2>Latest Feed</h2>
+  </div>
+
+  <!-- Feed Area -->
+  <div id="feed" onclick="closeNav()">
+    <div class="feeds">
+      <div class="feedheader">
+        <img src="Images/profile.png" class="userlogo"/>
+        <div>
+        <span class="feedheadertext">Hariharan Iyer • the status of that particular profile </span>
+        <span class="feedheaderpost">posted 5 hrs ago</span>
+        </div>
+      </div>
+      <div class="text">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste aperiam amet.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquam corporis hic.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quos consequuntur voluptas.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste aperiam amet.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aliquam corporis hic.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quos consequuntur voluptas</span>
+      </div>
+      <div class="feedfooter">
+        <img src="Images/like.png" class="like" /><span>&nbsp;•&nbsp;25</span>
+        <img src="Images/love.png" class="love" /><span>&nbsp;•&nbsp;25</span>
+        <img src="Images/comment.png" class="comment" /><span>&nbsp;•&nbsp;25</span>
+        <div class="readbtn" style="float: right;"><span>Read</span></div>
+      </div>
+    </div>
+    <div class="feeds"></div>
+    <div class="feeds"></div>
+    <div class="feeds"></div>
+    <div class="feeds"></div>
+    <div class="feeds"></div>
+    <div class="feeds"></div>
+  </div>
+
+  <!-- JS code for toggling sidebar in mobile view -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
 </html>
