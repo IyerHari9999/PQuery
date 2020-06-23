@@ -1,0 +1,89 @@
+.feedheader{
+    height: 50px;
+}
+
+.userlogo{
+    margin: 0px 0px;
+    height: 35px;
+    width:6%;
+    float: left;
+    border:3px solid #008AE6;
+    border-radius: 100%;
+}
+
+.feedheadertext{
+    float: left;
+    color: #008AE6;
+    font-size: 15px;
+    font-family: "Balsamiq Sans", cursive;
+    width: 94%;
+    padding-left: 10px;
+}
+
+.feedheaderpost{
+    font-size: 13px;
+    font-family: "Balsamiq Sans", cursive;
+    color: red;
+    padding-left: 10px;
+}
+
+.text{
+    font-style: italic;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    height: 85px;
+    font-size: 17px;
+}
+
+.feedfooter{
+    background-color:#008AE6;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.feedfooter span{
+   float: left;
+   padding:10px 2px;
+   color: white;
+   font-weight: bold;
+}
+
+.like{
+    float: left;
+    height: 30px;
+    padding-left: 15px;
+    margin: 5px 0px;
+}
+
+.love{
+    float: left;
+    height: 30px;
+    margin: 5px 0px;
+    padding-left: 15px;
+}
+
+.comment{
+    float: left;
+    margin: 5px 0px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.readbtn{
+    background-color: #015F9E;
+    height: 70%;
+    margin-top: 7px;
+    margin-right: 10px;
+    width:60px;
+    border-radius: 3px;
+}
+
+.readbtn span{
+    font-size: 14px;
+    width: 60px;
+    height: 28px;
+    padding: 6px 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Balsamiq Sans", cursive;
+}
