@@ -1,9 +1,8 @@
 .feedheader{
-    height: 50px;
+    height: 45px;
 }
 
 .userlogo{
-    margin: 0px 0px;
     height: 35px;
     width:6%;
     float: left;
@@ -18,6 +17,7 @@
     font-family: "Balsamiq Sans", cursive;
     width: 94%;
     padding-left: 10px;
+    margin-bottom: -5px;
 }
 
 .feedheaderpost{
@@ -28,10 +28,9 @@
 }
 
 .text{
+    overflow-y: hidden;
     font-style: italic;
-    padding-top: 2px;
-    padding-bottom: 15px;
-    height: 85px;
+    height: 82px;
     font-size: 17px;
 }
 
@@ -84,6 +83,65 @@
     height: 28px;
     padding: 6px 2px;
     text-align: center;
-    vertical-align: middle;
     font-family: "Balsamiq Sans", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    .feedheader{
+        height: 35px;
+    }
+
+    .userlogo{
+        height: 25px;
+    }
+    .feedheadertext{
+        font-size: 11px;
+        margin-bottom: -7px;
+    }
+
+    .feedheaderpost{
+        font-size: 8px;
+    }
+
+    .text{
+        height: 60px;
+        font-size: 13px;
+    }
+
+    .feedfooter{
+        height: 30px;
+    }
+
+    .feedfooter span{
+        font-size: 12px;
+        padding-top: 8px;
+        padding-left: 0px;
+    }
+    .like{
+        height: 20px;
+        padding-left: 5px;
+    }
+    
+    .love{
+        height: 20px;
+        padding-left: 5px;
+    }
+    
+    .comment{
+        height: 20px;
+        padding-left: 5px;
+    }
+    
+    .readbtn{
+        height: 70%;
+        margin-top: 5px;
+        margin-right: 6px;
+        width:50px;
+    }  
+
+    .readbtn span{
+        font-size: 11px;
+        width: 50px;
+        padding: 4px 2px;
+    }
 }
