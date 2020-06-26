@@ -1,110 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PQuery</title>
-    <link rel="stylesheet" type="text/css" href="../Styles/navbarStyle.css" />
-    <link rel="stylesheet" type="text/css" href="../Styles/sidebarStyle.css" />
-    <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <!-- Hamburger menu (&#9776) icon for sidebar -->
-      <span id="hamburger" onclick="openNav()">&#9776;</span>
+<head>
+  <title>PQuery</title>
+  <link rel="stylesheet" type="text/css" href="../Styles/navbarStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../Styles/sidebarStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet" />
+</head>
 
-      <!-- Sidebar in mobile view -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="../index.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="../Images/home.png" />
-            <div>Home</div>
-          </div>
-        </a>
-        <a href="#" onclick="closeNav()">
-          <hr id="active-tab" />
-          <div>
-            <img src="../Images/post.png" />
-            <div>Post</div>
-          </div>
-        </a>
-        <a href="./people.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="../Images/people.png" />
-            <div>People</div>
-          </div>
-        </a>
-        <a href="./about.html" onclick="closeNav()">
-          <hr class="notactive-tab" />
-          <div>
-            <img src="../Images/about.png" />
-            <div>About</div>
-          </div>
-        </a>
-      </div>
+<body>
+  <header>
+    <!-- Hamburger menu (&#9776) icon for sidebar -->
+    <span id="hamburger" onclick="openNav()">&#9776;</span>
 
-      <!-- PQuery Logo -->
-      <div id="logo">
-        <a href="../index.html" onclick="closeNav()">
-          <span style="color: red; margin-right: -5px;">!</span>
-          <span style="color: #008ae6;">PQuery</span>
-        </a>
-      </div>
-
-      <!-- Nav menu for desktop view -->
-      <div id="tabs">
-        <div class="tab">
-          <a href="../index.html">
-            <img src="../Images/home.png" />
-          </a>
+    <!-- Sidebar in mobile view -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="../Images/home.png" />
+          <div>Home</div>
         </div>
-        <div class="tab">
-          <a href="post.html">
-            <img src="../Images/post.png" />
-            <hr id="tab-active" />
-          </a>
+      </a>
+      <a href="#" onclick="closeNav()">
+        <hr id="active-tab" />
+        <div>
+          <img src="../Images/post.png" />
+          <div>Post</div>
         </div>
-        <div class="tab">
-          <a href="people.html">
-            <img src="../Images/people.png" />
-          </a>
+      </a>
+      <a href="./people.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="../Images/people.png" />
+          <div>People</div>
         </div>
-        <div class="tab">
-          <a href="about.html">
-            <img src="../Images/about.png" />
-          </a>
+      </a>
+      <a href="./about.html" onclick="closeNav()">
+        <hr class="notactive-tab" />
+        <div>
+          <img src="../Images/about.png" />
+          <div>About</div>
         </div>
-      </div>
-
-      <!-- User Profile Avatar -->
-      <div id="user">
-        <img src="../Images/profile.png" />
-      </div>
-    </header>
-
-    <!-- Temporary Page content -->
-    <div>
-      <h2>Post Page</h2>
+      </a>
     </div>
 
-    <!-- JS code for toggling sidebar in mobile view -->
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
+    <!-- PQuery Logo -->
+    <div id="logo">
+      <a href="../index.html" onclick="closeNav()">
+        <span style="color: red; margin-right: -5px;">!</span>
+        <span style="color: #008ae6;">PQuery</span>
+      </a>
+    </div>
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-  </body>
+    <!-- Nav menu for desktop view -->
+    <div id="tabs">
+      <div class="tab">
+        <a href="../index.html">
+          <img src="../Images/home.png" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="post.html">
+          <img src="../Images/post.png" />
+          <hr id="tab-active" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="people.html">
+          <img src="../Images/people.png" />
+        </a>
+      </div>
+      <div class="tab">
+        <a href="about.html">
+          <img src="../Images/about.png" />
+        </a>
+      </div>
+    </div>
+
+    <!-- User Profile Avatar -->
+    <div id="user">
+      <img src="../Images/profile.png" />
+    </div>
+  </header>
+
+  <!-- Temporary Page content -->
+  <div>
+    <h2>Post Page</h2>
+  </div>
+
+  <!-- JS code for toggling sidebar in mobile view -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
 </html>
