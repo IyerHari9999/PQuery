@@ -6,6 +6,7 @@
     height: 32px;
     width:34px;
     float: left;
+    margin-left: 10px;
     border-radius: 100%;
 }
 
@@ -32,12 +33,15 @@
     font-weight: 400;
     font-style: italic;
     height: 82px;
-    font-size: 14px;
+    font-size: 13px;
+    width: 97%;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .feedfooter{
-    margin-top: 3px;
-    margin-left: -4px;
+    margin-top: 5px;
     background-color:#008AE6;
     height: 35px;
     border-radius: 3px;
@@ -99,11 +103,13 @@
 
     .userlogo{
         height: 23px;
-        width: 27px;
+        margin-left: 5px;
+        width: 25px;
     }
     .feedheadertext{
-        font-size: 11px;
-        margin-bottom: -7px;
+        font-size: 9px;
+        margin-bottom: -10px;
+        line-height: 9px;
     }
 
     .feedheaderpost{
@@ -112,7 +118,7 @@
 
     .text{
         height: 60px;
-        font-size: 8.5px;
+        font-size: 6px;
     }
 
     .feedfooter{
@@ -142,7 +148,7 @@
     
     .readbtn{
         height: 70%;
-        margin-top: 4px;
+        margin-top: 3.5px;
         margin-right: 6px;
         width:50px;
     }  
@@ -150,6 +156,6 @@
     .readbtn span{
         font-size: 11px;
         width: 50px;
-        padding: 4px 2px;
+        padding: 3px 2px;
     }
 }
