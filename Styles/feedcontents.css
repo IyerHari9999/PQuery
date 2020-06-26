@@ -3,19 +3,18 @@
 }
 
 .userlogo{
-    height: 35px;
-    width:6%;
+    height: 32px;
+    width:34px;
     float: left;
-    border:3px solid #008AE6;
     border-radius: 100%;
 }
 
 .feedheadertext{
     float: left;
     color: #008AE6;
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Balsamiq Sans", cursive;
-    width: 94%;
+    width: 95%;
     padding-left: 10px;
     margin-bottom: -5px;
 }
@@ -29,49 +28,56 @@
 
 .text{
     overflow-y: hidden;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 400;
     font-style: italic;
     height: 82px;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .feedfooter{
+    margin-top: 3px;
+    margin-left: -4px;
     background-color:#008AE6;
-    height: 40px;
+    height: 35px;
     border-radius: 3px;
 }
 
 .feedfooter span{
+    font-size: 15px;
    float: left;
-   padding:10px 2px;
+   padding:8px 0px;
    color: white;
+   font-family: "Balsamiq Sans", cursive;
    font-weight: bold;
+   
 }
 
 .like{
     float: left;
-    height: 30px;
+    height: 23px;
     padding-left: 15px;
     margin: 5px 0px;
 }
 
 .love{
     float: left;
-    height: 30px;
-    margin: 5px 0px;
+    height: 23px;
     padding-left: 15px;
+    margin: 5px 0px;
 }
 
 .comment{
     float: left;
-    margin: 5px 0px;
-    height: 30px;
+    height: 23px;
     padding-left: 15px;
+    margin: 5px 0px;
 }
 
 .readbtn{
     background-color: #015F9E;
     height: 70%;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-right: 10px;
     width:60px;
     border-radius: 3px;
@@ -92,7 +98,8 @@
     }
 
     .userlogo{
-        height: 25px;
+        height: 23px;
+        width: 27px;
     }
     .feedheadertext{
         font-size: 11px;
@@ -105,36 +112,37 @@
 
     .text{
         height: 60px;
-        font-size: 13px;
+        font-size: 8.5px;
     }
 
     .feedfooter{
-        height: 30px;
+        height: 25px;
     }
 
     .feedfooter span{
-        font-size: 12px;
-        padding-top: 8px;
-        padding-left: 0px;
+        font-size: 10px;
     }
     .like{
-        height: 20px;
+        height: 17px;
         padding-left: 5px;
+        margin: 4px 0px;
     }
     
     .love{
-        height: 20px;
-        padding-left: 5px;
+        height: 17px;
+        padding-left: 6px;
+        margin: 4px 0px;
     }
     
     .comment{
-        height: 20px;
-        padding-left: 5px;
+        height: 17px;
+        padding-left: 6px;
+        margin: 4px 0px;
     }
     
     .readbtn{
         height: 70%;
-        margin-top: 5px;
+        margin-top: 4px;
         margin-right: 6px;
         width:50px;
     }  
